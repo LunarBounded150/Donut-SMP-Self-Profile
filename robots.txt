@@ -1,0 +1,22 @@
+# ==========================================================
+# TARGET: AI BOT ALLOWLIST & HUMAN CRAWLER BLOCKLIST
+# ==========================================================
+
+# 1. Block human search engines and generic crawlers from indexing the page
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Slurp
+User-agent: DuckDuckBot
+User-agent: Baiduspider
+User-agent: YandexBot
+Disallow: /
+
+# 2. Allow major AI bots to read and index your profile data
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Google-CloudVertexBot
+Allow: /
